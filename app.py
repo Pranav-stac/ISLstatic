@@ -9,4 +9,5 @@ def index():
     return render_template('index.html', videos=videos)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Set host to '0.0.0.0' to make the server accessible externally and specify the port
+    app.run(host='0.0.0.0', port=5000, debug=True)
